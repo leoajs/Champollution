@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Champollution - L'impact des PFAS sur la santé humaine</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="ressources/tailwind_config.js"></script>
+    <link rel="stylesheet" href="ressources/style.css">
+</head>
+<body class="font-poppins bg-gray-50">
+    <!-- Bouton fixe "En savoir plus" -->
+    <div class="fixed left-0 top-1/2 -translate-y-1/2 hidden md:block z-50" style="display:none;">
+        <a href="en-savoir-plus.html">
+            <button id="enSavoirPlusButton" class="relative bg-green-600 text-white px-4 py-3 rounded-r-lg shadow-lg hover:bg-green-700 transition-all duration-300 hover:translate-x-1 group">
+                <span class="writing-mode-vertical transform rotate-180 inline-block">En savoir plus</span>
+                <div id="popupInfo" class="absolute bg-green-600 text-white p-4 rounded-lg left-full top-0 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 shadow-lg">
+                    <h3 class="font-semibold mb-2">Découvrez plus sur les PFAS</h3>
+                    <p class="text-sm">Cliquez pour en apprendre davantage sur les polluants éternels et leur impact sur notre environnement.</p>
+                </div>
+            </button>
+        </a>
+    </div>
+
+
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-green-500 to-green-600 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center">
+            <a href="index.html">
+                <div class="flex items-center gap-4">
+                    <img src="ressources/images/logo_champollution_transparent.png" alt="Champollution Logo" class="h-16 w-16 object-cover rounded border-2 border-white p-1">
+                    <h1 class="text-2xl md:text-3xl font-semibold text-white text-shadow">Champollution</h1>
+                </div>
+            </a>
+            <div class="flex items-center justify-center">
+                <div class="text-white/90 text-lg mt-2 md:mt-0">Les polluants éternels</div>
+                <!-- Logo INUC -->
+                <img src="ressources/images/logo_inuc.png" alt="Logo INUC" class="h-8 w-auto ml-3" draggable="false" oncontextmenu="return false;">
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-8">
+        <!-- Bouton Retour -->
+        <div class="bottom-4 left-4">
+            <button onclick="window.location.href='en-savoir-plus.html'" class="bg-green-600 text-white px-4 py-3 rounded-lg shadow-lg hover:bg-green-700 transition-all duration-300 flex items-center gap-2">
+                <i class="fas fa-arrow-left"></i>
+                <span>Retour</span>
+            </button>
+        </div>
+        <section class="rounded-xl shadow-lg p-8 my-12">
+            <h3 class="text-3xl font-bold text-green-600 text-left">Impact des PFAS sur la santé humaine</h3>
+        </section>
+
+        <section class="rounded-xl shadow-lg p-8 my-12">
+            <!-- Début : Effets sur la santé humaine -->
+            <h3 class="text-xl font-semibold text-left mb-3"><i class="fa-solid fa-arrow-right"></i> Quels sont concrètement les effets sur la santé humaine ?</h3>
+            <p class="text-lg text-left">
+                Les PFAS, en raison de leur persistance dans l’environnement, ne se contentent pas de contaminer les sols, l’eau et l’air. Ils s’accumulent également dans nos corps, où ils peuvent rester pendant de longues périodes. L’exposition prolongée à ces substances a été associée à des effets graves sur la santé humaine.
+            </p>
+            <div class="w-full sm:w-1/3 mx-auto my-4">
+                <img class="border-2 rounded-lg p-4" src="ressources/images/risquesLeParisien.jpg" alt="Les risques de l'exposition aux PFAS (Le Parisien)">
+                <p class="mt-2 text-md text-slate-400 text-center">Les risques de l'exposition aux PFAS<br>Source : <a href="https://www.leparisien.fr/societe/sante/polluants-eternels-ce-que-lon-sait-de-leurs-risques-pour-la-sante-04-04-2024-B7PCPHAW2NGW5MEDUOFQHSMDNI.php" target="_blank">Le Parisien</a></p>
+            </div>
+        
+            <p class="text-lg text-left mt-4">
+                Voici quelques-uns des effets les plus préoccupants documentés dans les études scientifiques :
+            </p>
+            <ul class="list-none ml-6 text-lg">
+                <li><span class="text-green-600"><i class="fa-solid fa-arrow-right"></i></span> <span class="underline decoration-2 decoration-indigo-500">Effets cancérogènes :</span> augmentation des risques de cancer des testicules et des reins.</li>
+                <li><span class="text-green-600"><i class="fa-solid fa-arrow-right"></i></span> <span class="underline decoration-2 decoration-indigo-500">Effets sur les systèmes reproductifs et hormonaux :</span> perturbateurs endocriniens, retard de la puberté, dysfonctionnement des organes (foie, reins), diminution des hormones.</li>
+                <li><span class="text-green-600"><i class="fa-solid fa-arrow-right"></i></span> <span class="underline decoration-2 decoration-indigo-500">Effets sur le système immunitaire :</span> diminution de la réponse vaccinale et augmentation des risques d’infections.</li>
+                <li><span class="text-green-600"><i class="fa-solid fa-arrow-right"></i></span> <span class="underline decoration-2 decoration-indigo-500">Autres effets :</span> obésité, baisse générale de la fertilité.</li>
+            </ul>
+            <p class="text-lg text-left mt-4">
+                En plus de ces effets, les PFAS sont également associés à des 
+                <span class="underline decoration-2 decoration-indigo-500">troubles métaboliques</span>, tels que l’obésité, ainsi qu’à une 
+                <span class="underline decoration-2 decoration-indigo-500">baisse des taux hormonaux</span> et à des problèmes de fertilité. Ces risques concernent principalement des expositions chroniques, c’est-à-dire répétées sur une longue période.
+            </p>
+            <div class="rounded-xl shadow-lg p-8 mt-4 bg-amber-100">
+                <img class="w-10 float-left mr-2" src="ressources/images/categories/alerte.webp" alt="icone alerte">
+                <p class="text-gray-500">
+                    <strong>À retenir :</strong> Les risques liés aux PFAS sont principalement chroniques, résultant d’une exposition répétée à long terme. Leur accumulation dans l'organisme en fait une préoccupation majeure pour la santé publique.
+                </p>
+            </div>
+            <!-- Fin : Effets sur la santé humaine -->
+        </section>     
+    </main>
+
+    <footer class="bg-green-600 text-white py-8 text-center">
+        <p>Champollution © 2024</p><br>
+        <p>Projet de T.E par des étudiants de Sciences de la vie et d'Informatique pour sensibiliser au problème des polluants éternels.</p>
+        <div class="flex items-center justify-center">
+            <a href="https://www.univ-jfc.fr/" target="_blank" class="underline text-amber-200"><p>Institut National Universitaire Champollion</p></a>
+            <!-- Logo INUC -->
+            <img src="ressources/images/logo_inuc.png" alt="Logo INUC" class="h-8 w-auto ml-3" draggable="false" oncontextmenu="return false;">
+        </div>
+    </footer>
+
+    <script src="ressources/pfasCard.js"></script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Champollution - Les Polluants Éternels</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="ressources/tailwind_config.js"></script>
+    <link rel="stylesheet" href="ressources/style.css">
+</head>
+<body class="font-poppins bg-gray-50">
+    <!-- Bouton fixe "En savoir plus" -->
+    <div class="fixed left-0 top-1/2 -translate-y-1/2 hidden md:block z-50">
+        <a href="en-savoir-plus.html">
+            <button id="enSavoirPlusButton" class="relative bg-green-600 text-white px-4 py-3 rounded-r-lg shadow-lg hover:bg-green-700 transition-all duration-300 hover:translate-x-1 group">
+                <span class="writing-mode-vertical transform rotate-180 inline-block">En savoir plus</span>
+                <div id="popupInfo" class="absolute bg-green-600 text-white p-4 rounded-lg left-full top-0 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 shadow-lg">
+                    <h3 class="font-semibold mb-2">Découvrez plus sur les PFAS</h3>
+                    <p class="text-sm">Cliquez pour en apprendre davantage sur les polluants éternels et leur impact sur notre environnement.</p>
+                </div>
+            </button>
+        </a>
+    </div>
+
+
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-green-500 to-green-600 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center">
+            <a href="index.html">
+                <div class="flex items-center gap-4">
+                    <img src="ressources/images/logo_champollution_transparent.png" alt="Champollution Logo" class="h-16 w-16 object-cover rounded border-2 border-white p-1">
+                    <h1 class="text-2xl md:text-3xl font-semibold text-white text-shadow">Champollution</h1>
+                </div>
+            </a>
+            <div class="flex items-center justify-center">
+                <div class="text-white/90 text-lg mt-2 md:mt-0">Les polluants éternels</div>
+                <!-- Logo INUC -->
+                <img src="ressources/images/logo_inuc.png" alt="Logo INUC" class="h-8 w-auto ml-3" draggable="false" oncontextmenu="return false;">
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-8">
+        <section class="bg-orange-200 rounded-xl shadow-lg p-8 my-12">
+            <h3 class="text-2xl font-semibold text-green-600 text-left mb-4">Vous ne pouvez ni les voir ni les sentir, mais chaque jour, <span class="underline">vous êtes en contact avec des polluants éternels.</span></h3>
+            <p class="">Les PFAS sont là pour rester, et leurs effets sur notre santé et notre planète sont irréversibles.</p><br>
+            <p class="font-medium text-lg">Essayez et faites apparaître un exemple de PFAS en cliquant sur le bouton ci-dessous.</p>
+        </section>
+        <!-- Section PFAS -->
+        <section class="text-center my-12">
+            <button id="pfasButton" class="bg-green-500 text-white px-8 py-4 rounded-full font-medium text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 hover:bg-green-600">
+                <i class="fas fa-flask mr-2"></i> Voir un PFAS aléatoirement
+            </button>
+            <div id="pfasCard" class="hidden mt-8 bg-white rounded-xl shadow-lg max-w-2xl mx-auto p-8 transform transition-all duration-300 opacity-0 scale-95">
+                <h3 class="text-xl font-semibold mb-4">Exemple de PFAS de la vie de tous les jours</h3>
+                <div class="space-y-3 text-left">
+                    <img src="ressources/images/pfasExamples/teflon.webp" class="w-60 mx-auto border-2 border-green-600 rounded-md" alt="Image montrant un exemple d'utilisation du PFAS en question">
+                    <p>
+                        <span class="text-gray-400">Nom du polluant :</span> 
+                        <span class="font-semibold text-green-600">Téflon</span>
+                    </p>
+                    <p>
+                        <span class="text-gray-400">Nom scientifique :</span> 
+                        <span class="font-semibold text-green-600">Polytetrafluoroethylene (PTFE)</span>
+                    </p>
+                    <p>
+                        <span class="text-gray-400">Utilisation :</span> 
+                        <span class="font-semibold">Poêles antiadhésives, imperméabilisation de textiles.</span>
+                    </p>
+                    <p>
+                        <span class="text-gray-400">Impact :</span> 
+                        <span class="font-semibold">Persistant dans l'environnement, toxique pour la faune et la flore.</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Statistiques -->
+        <section class="bg-white rounded-xl shadow-lg p-8 my-12">
+            <h2 class="text-2xl font-semibold text-green-600 text-center mb-8">Quelques données alarmantes sur les PFAS</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 rounded-lg p-6 text-center transform transition-transform hover:-translate-y-2">
+                    <div class="text-4xl font-bold text-green-600 mb-2">nombre inconnu</div>
+                    <p>Le nombre exact de PFAS n'est pas connu : <span class="underline">4000, 5000 ou 14 000 !</span></p>
+                    <a href="https://www.actu-environnement.com/media/pdf/news-43441-rapport-cyrille-isaac-sibille-pfas-mission.pdf" target="_blank">
+                        <p class="mt-4 text-xs text-slate-400">Source : Rapport PFAS - Cyrille Isaac-Sibille</p>
+                    </a>
+                </div>
+                <div class="bg-gray-50 rounded-lg p-6 text-center transform transition-transform hover:-translate-y-2">
+                    <div class="text-4xl font-bold text-green-600 mb-2">plusieurs siècles</div>
+                    <p>"persistants dans l’environnement (de quelques décennies à plusieurs siècles)"</p>
+                    <a href="https://ecotoxicologie.fr/pfas-risque-environnement" target="_blank">
+                        <p class="mt-4 text-xs text-slate-400">Source : ecotoxicologie.fr</p>
+                    </a>
+                </div>
+                <div class="bg-gray-50 rounded-lg p-6 text-center transform transition-transform hover:-translate-y-2">
+                    <div class="text-4xl font-bold text-green-600 mb-2">99%</div>
+                    <p>Échantillons de sang humain testés positifs</p>
+                    <a href="https://www.lesoir.be/548515/article/2023-11-09/pfas-des-perturbateurs-endocriniens-aux-effets-encore-mal-compris" target="_blank">
+                        <p class="mt-4 text-xs text-slate-400">Source : Pfas : des perturbateurs endocriniens aux effets encore mal compris</p>
+                    </a>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Section En savoir plus -->
+        <section class="bg-white rounded-xl shadow-lg p-8 my-12 text-center">
+            <h2 class="text-2xl font-semibold mb-4">En savoir plus</h2>
+            <p class="mb-6">Cette section traite des exemples locaux, tels que la Vallée de la Chimie à Lyon, où les impacts des PFAS sont étudiés et documentés.</p>
+            <a href="en-savoir-plus.html" class="inline-block bg-green-600 text-white px-8 py-3 rounded-full hover:bg-green-700 transition-all duration-300 hover:-translate-y-1">
+                <i class="fas fa-arrow-right mr-2"></i> En savoir plus
+            </a>
+        </section>
+
+        <!-- Section Carte -->
+        <section class="bg-white rounded-xl shadow-lg p-8 my-12 text-center">
+            <div class="flex items-center justify-center mb-4">
+                <h2 class="text-2xl font-semibold">Carte des PFAS</h2>
+                <!-- Logo Le Monde -->
+                <img src="ressources/images/logo_lemonde.png" alt="Le Monde Logo" class="h-8 w-auto ml-3" draggable="false" oncontextmenu="return false;">
+            </div>
+            <p class="mb-6">Pour en savoir plus sur la distribution des PFAS en Europe, consultez la carte interactive réalisée par LeMonde.</p>
+            <a href="https://www.lemonde.fr/les-decodeurs/article/2023/02/23/polluants-eternels-explorez-la-carte-d-europe-de-la-contamination-par-les-pfas_6162942_4355770.html" target="_blank" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition-all duration-300 hover:-translate-y-1">
+                <i class="fas fa-map-marked-alt mr-2"></i> Voir la carte des PFAS sur lemonde.fr
+            </a>
+        </section>
+    </main>
+
+    <footer class="bg-green-600 text-white py-8 text-center">
+        <p>Champollution © 2024</p><br>
+        <p>Projet de T.E par des étudiants de Sciences de la vie et d'Informatique pour sensibiliser au problème des polluants éternels.</p>
+        <div class="flex items-center justify-center">
+            <a href="https://www.univ-jfc.fr/" target="_blank" class="underline text-amber-200"><p>Institut National Universitaire Champollion</p></a>
+            <!-- Logo INUC -->
+            <img src="ressources/images/logo_inuc.png" alt="Logo INUC" class="h-8 w-auto ml-3" draggable="false" oncontextmenu="return false;">
+        </div>
+    </footer>
+
+    <script src="ressources/pfasCard.js"></script>
+</body>
+</html>

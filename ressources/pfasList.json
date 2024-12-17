@@ -1,0 +1,61 @@
+{
+    "pfas_fiches": [
+      {
+        "nom_du_produit": "Scotchgard",
+        "nom_scientifique": "Perfluorooctanesulfonate (PFOS)",
+        "utilisation": "Imperméabilisation de meubles, textiles, vêtements, et tapis.",
+        "impact": "Persistant dans l'environnement, bioaccumulation dans les organismes, potentiel de toxicité pour les systèmes hormonaux.",
+        "image_url": "ressources/images/pfasExamples/scotchgard.webp"
+      },
+      {
+        "nom_du_produit": "Téflon",
+        "nom_scientifique": "Polytetrafluoroethylene (PTFE)",
+        "utilisation": "Poêles antiadhésives, imperméabilisation de textiles.",
+        "impact": "Persistant dans l'environnement, toxique pour la faune et la flore.",
+        "image_url": "ressources/images/pfasExamples/teflon.webp"
+      },
+      {
+        "nom_du_produit": "Mousse anti-incendie",
+        "nom_scientifique": "Perfluorohexane sulfonic acid (PFHxS)",
+        "utilisation": "Utilisée dans les aéroports et installations industrielles pour éteindre les incendies.",
+        "impact": "Contamination des eaux souterraines, persistance dans l'environnement, et toxicité pour les systèmes reproducteurs.",
+        "image_url": "ressources/images/pfasExamples/mousse.webp"
+      },
+      {
+        "nom_du_produit": "Revêtement anti-tache",
+        "nom_scientifique": "Perfluorobutanesulfonic acid (PFBS)",
+        "utilisation": "Appliqué sur les textiles et les tapis pour les rendre résistants aux taches.",
+        "impact": "Risque de contamination de l'eau potable et accumulation dans les organismes vivants.",
+        "image_url": "ressources/images/pfasExamples/antitache.webp"
+      },
+      {
+        "nom_du_produit": "Emballages alimentaires",
+        "nom_scientifique": "Perfluorooctanoic acid (PFOA)",
+        "utilisation": "Utilisés pour rendre les emballages résistants à la graisse (par exemple, boîtes de pizza et papiers de sandwich).",
+        "impact": "Migration des PFAS vers les aliments, exposition humaine directe.",
+        "image_url": "ressources/images/pfasExamples/emballages_alimentaires.webp"
+      },
+      {
+        "nom_du_produit": "Cire de ski",
+        "nom_scientifique": "Perfluorinated wax compound",
+        "utilisation": "Améliorer la glisse des skis sur la neige.",
+        "impact": "Contamination des sols et des cours d'eau après fonte des neiges.",
+        "image_url": "ressources/images/pfasExamples/ski.webp"
+      },
+      {
+        "nom_du_produit": "Papiers de cuisson",
+        "nom_scientifique": "Perfluorinated alkyl substances (PFAS)",
+        "utilisation": "Papier sulfurisé pour empêcher les aliments de coller lors de la cuisson.",
+        "impact": "Migration de substances vers les aliments lors de la cuisson.",
+        "image_url": "ressources/images/pfasExamples/papier-cuisson.webp"
+      },
+      {
+        "nom_du_produit": "Vêtements d’extérieur",
+        "nom_scientifique": "Perfluorooctane sulfonamide (FOSA)",
+        "utilisation": "Utilisés pour rendre les vêtements résistants à l'eau et à la saleté.",
+        "impact": "Pollution des eaux lors du lavage, bioaccumulation dans les écosystèmes aquatiques.",
+        "image_url": "ressources/images/pfasExamples/vetements-ext.webp"
+      }
+    ]
+  }
+  

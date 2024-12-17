@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Champollution - Pourquoi polluants éternels</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="ressources/tailwind_config.js"></script>
+    <link rel="stylesheet" href="ressources/style.css">
+</head>
+<body class="font-poppins bg-gray-50">
+    <!-- Bouton fixe "En savoir plus" -->
+    <div class="fixed left-0 top-1/2 -translate-y-1/2 hidden md:block z-50" style="display:none;">
+        <a href="en-savoir-plus.html">
+            <button id="enSavoirPlusButton" class="relative bg-green-600 text-white px-4 py-3 rounded-r-lg shadow-lg hover:bg-green-700 transition-all duration-300 hover:translate-x-1 group">
+                <span class="writing-mode-vertical transform rotate-180 inline-block">En savoir plus</span>
+                <div id="popupInfo" class="absolute bg-green-600 text-white p-4 rounded-lg left-full top-0 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 shadow-lg">
+                    <h3 class="font-semibold mb-2">Découvrez plus sur les PFAS</h3>
+                    <p class="text-sm">Cliquez pour en apprendre davantage sur les polluants éternels et leur impact sur notre environnement.</p>
+                </div>
+            </button>
+        </a>
+    </div>
+
+
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-green-500 to-green-600 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center">
+            <a href="index.html">
+                <div class="flex items-center gap-4">
+                    <img src="ressources/images/logo_champollution_transparent.png" alt="Champollution Logo" class="h-16 w-16 object-cover rounded border-2 border-white p-1">
+                    <h1 class="text-2xl md:text-3xl font-semibold text-white text-shadow">Champollution</h1>
+                </div>
+            </a>
+            <div class="flex items-center justify-center">
+                <div class="text-white/90 text-lg mt-2 md:mt-0">Les polluants éternels</div>
+                <!-- Logo INUC -->
+                <img src="ressources/images/logo_inuc.png" alt="Logo INUC" class="h-8 w-auto ml-3" draggable="false" oncontextmenu="return false;">
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-8">
+        <!-- Bouton Retour -->
+        <div class="bottom-4 left-4">
+            <button onclick="window.location.href='en-savoir-plus.html'" class="bg-green-600 text-white px-4 py-3 rounded-lg shadow-lg hover:bg-green-700 transition-all duration-300 flex items-center gap-2">
+                <i class="fas fa-arrow-left"></i>
+                <span>Retour</span>
+            </button>
+        </div>
+        <section class="rounded-xl shadow-lg p-8 my-12">
+            <h3 class="text-3xl font-bold text-green-600 text-left">Pourquoi polluants éternels ?</h3>
+        </section>
+
+        <section class="rounded-xl shadow-lg p-8 my-12">
+            <!-- Début : Pourquoi parlons-nous de polluants éternels ? -->
+            <h3 class="text-xl font-semibold text-left mb-3"><i class="fa-solid fa-arrow-right"></i> Pourquoi parlons-nous de polluants éternels ?</h3>
+            <p class="text-lg text-left">Dans la nature nous retrouvons énormément de chaines carbonées. Ces chaines sont
+                composées d’un nombre variable d’<span class="underline decoration-2 decoration-indigo-500">atome de carbone (C)</span> possédant des liaisons chimiques avec
+                des <span class="underline decoration-2 decoration-indigo-500">atomes d’hydrogènes (H)</span>. On retrouve également dans l’environnements un grand nombre
+                d’enzyme ayant la possibilité de détruire très facilement les liaisons ester, thioester, les liaisons
+                amides par exemples.<br><br>
+                Cependant, lorsque que nous avons une chaine carbonée, sa destruction est plus compliquée ce
+                qui signifie que les liaisons C-C (carbone-carbone) sont initialement assez résistantes et assez
+                difficiles à « casser ».<br><br>
+                
+                Dans l’environnement, quand nous relâchons des antibiotiques ou bien des phytosanitaires
+                (produits de protection des plantes), ces enzymes vont donc trier très rapidement dans le temps
+                ces molécules par hydrolyse de leurs fonctions ( ester, carbamates (fonctions
+                amide)(insecticides)) et vont ainsi donc perdre très rapidement leurs <span class="underline decoration-2 decoration-indigo-500">propriétés biochimiques.</span><br><br>
+            </p>
+
+                <div class="w-full sm:w-1/3 mx-auto my-4">
+                    <img class="border-2 rounded-lg p-4" src="ressources/images/categories/pfas_molecules.webp" alt="" srcset="">
+                    <p class="mt-2 text-md text-slate-400 text-center">Molécule polyfluorée</p>
+                </div>
+
+                <p class="text-lg text-left">Les polluants éternels sont des chaines carbonées, dans lesquelles l’Homme a réussi
+                chimiquement à remplacer les atomes d’hydrogène des carbones (tétravalent) par des <span class="underline decoration-2 decoration-green-500">atomes
+                de Fluor (F)</span>. Nous avons donc à faire à des produits perfluorés (polyperfluorés) que nous
+                appelons aujourd’hui dans le langage courant par : les PFAS. Comme nous l’avons vu, les liaison
+                C-C sont des liaisons difficiles à couper. Si nous remplaçons les atomes d’hydrogène par des
+                atomes de Fluor bien plus gros et électronégatifs, l’énergie des liaison C-F, va avoir tendance à
+                « tirer » les atomes de carbone, en conférant à la chaine carbonée une très grande résistance de
+                dégradation. Par la présence de ces atomes de Fluor, l’énergie de liaisons (très stable) de ces
+                chaines carbonées fluorées, engendrent donc des propriétés chimiques très différentes et est
+                source d’une très grande toxicité et difficulté de dégradation. Les PFAS ne peuvent donc pas se
+                dégrader dans l’environnement lors de leur rejet.</p>
+
+                <div class="rounded-xl shadow-lg p-8 mt-4 bg-amber-100">
+                    <img class="w-10 float-left mr-2" src="ressources/images/categories/alerte.webp" alt="icone alerte">
+                    <p class="text-gray-500"><strong>À retenir :</strong> ces molécules perfluorés sont <span class="underline decoration-2 decoration-indigo-500">créés par l’humain</span>, ce qui signifie qu’ils n’existent
+                        pas dans la nature. Ils présentent tous le même type de construction moléculaire => chaine de
+                        longueur variable sur laquelle les atomes H ont été retirés et remplacés par des atomes de fluor.
+                        La liaison carbone-fluor => liaisons très fortes ce qui engendre une stabilité très grande de ces
+                        molécules synthétisées par l’homme (<span class="underline decoration-2 decoration-indigo-500">dégradation très faible</span>)</p>
+                </div>
+                <p class="text-lg text-left mt-4">
+                    Il en existe deux types :<br>
+                    <span class="text-green-600"><i class="fa-solid fa-arrow-right"></i> Les PFAS à chaine longue </span> : contiennent entre 6 et 12 atomes de carbone<br>
+                    <span class="text-green-600"><i class="fa-solid fa-arrow-right text-green-600"></i> Les PFAS à chaine courte</span> : contiennent au moins 8 atomes de carbones<br><br>
+                    <span class="underline">Seuil de distinction</span> : entre 6 et 8 carbones<br>
+                    <span class="underline">Liaison Carbone-fluor</span> : l’une des plus forte de la chimie organique<br><br>
+                    Les <span class="text-green-600">PFAS à chaîne longue</span> se fixent et s’accumulent dans les sols, les sédiments et les
+                    organismes vivants. C’est ce que l’on appelle la bioaccumulation. Cela entraîne un risque élevé de <span class="underline decoration-2 decoration-indigo-500">contamination des aliments</span>, en particulier ceux
+                    provenant de la mer.<br><br>
+
+                    Au cours des dernières décennies, les <span class="text-green-600">PFAS à chaîne longue</span> ont été substitués en partie par
+                    des <span class="text-green-600">PFAS à chaîne courte</span>, plus solubles dans l’eau et plus mobiles : des traces ont été
+                    détectées jusque dans les océans Arctique et Antarctique. Ces derniers restent persistants et
+                    peuvent présenter un <span class="underline decoration-2 decoration-indigo-500">niveau équivalent de préoccupation</span>.
+
+                    Ces composés sont plus de 4700, tous obtenus par synthèse chimique.
+                </p>
+                <!-- Fin : Pourquoi parlons-nous de polluants éternels ? -->
+        </section>
+        <section class="rounded-xl shadow-lg p-8 my-12">
+            <!-- Début : Pourquoi l’homme a-t-il crée ces molécules poly fluorées ? -->
+            <h3 class="text-xl font-semibold text-left mb-3"><i class="fa-solid fa-arrow-right"></i> Pourquoi l’homme a-t-il crée ces molécules polyfluorées ?</h3>
+            <p class="text-lg text-left">L’homme a décidé de créer ces molécules car elles sont des propriétés chimiques uniques les rendant très utilises dans les domaines du commerce et de l’industrie.
+                <br><br><span class="underline">Par exemple :</span> elles possèdent des <span class="underline decoration-2 decoration-indigo-500">propriétés mécaniques très intéressantes</span> pour l'industrie. Elles peuvent assurer une grande solidité au fil du temps, ce qui permet de prévenir l'usure de certains matériaux.
+                <br><br><span class="underline decoration-2 decoration-indigo-500">Des propriétés lubrifiantes résistantes :</span> les huiles se dégradent avec le temps (elles perdent leurs caractéristiques et se détériorent). Cela peut endommager les caoutchoucs des courroies et causer des défaillances moteur sur de nombreux véhicules.</p>
+
+                <div class="w-full sm:w-1/4 mx-auto my-2">
+                    <img class="border-2 rounded-lg p-4" src="https://www.points.fr/wp-content/uploads/2022/10/service_distribution_450x600.jpg" alt="" srcset="">
+                    <p class="mt-2 text-md text-slate-400 text-center">Courroie de distribution</p>
+                </div>
+                
+                <p class="text-lg text-left">Ces molécules sont adorées par les industries et sont <span class="underline decoration-2 decoration-indigo-500">omniprésentes</span> dans notre quotidien avec donc une <span class="underline decoration-2 decoration-indigo-500">durée de vie redoutablement longue</span>. Cette classe de composés synthétiques est dotée de nombreuses qualités telles que : hydrofuge, lipophobe (résistance aux graisses), elle supporte les chaleurs intenses, l’acidité, la lumière et la dégradation microbienne.<br><br>
+            </p>
+            <div class="rounded-xl shadow-lg p-8 mt-4 bg-amber-100">
+                <img class="w-10 float-left mr-2" src="ressources/images/categories/alerte.webp" alt="icone alerte">
+                <p class="text-gray-500"><strong>À retenir :</strong> en résumé, les molécules polyfluorées ont été créées en raison de leurs propriétés chimiques uniques, qui les rendent extrêmement utiles dans de nombreux secteurs industriels. <span class="underline decoration-2 decoration-indigo-500">Leur durabilité, leur résistance</span> aux conditions extrêmes et leur capacité à préserver la performance des matériaux en font des composés essentiels dans notre quotidien. Grâce à leurs qualités exceptionnelles, elles continuent de jouer un <span class="underline decoration-2 decoration-indigo-500">rôle clé dans l'innovation industrielle et commerciale.</span></p>
+            </div>
+                <!-- Fin : Pourquoi l’homme a-t-il crée ces molécules poly fluorées ? -->
+        </section>
+    </main>
+
+    <footer class="bg-green-600 text-white py-8 text-center">
+        <p>Champollution © 2024</p><br>
+        <p>Projet de T.E par des étudiants de Sciences de la vie et d'Informatique pour sensibiliser au problème des polluants éternels.</p>
+        <div class="flex items-center justify-center">
+            <a href="https://www.univ-jfc.fr/" target="_blank" class="underline text-amber-200"><p>Institut National Universitaire Champollion</p></a>
+            <!-- Logo INUC -->
+            <img src="ressources/images/logo_inuc.png" alt="Logo INUC" class="h-8 w-auto ml-3" draggable="false" oncontextmenu="return false;">
+        </div>
+    </footer>
+
+    <script src="ressources/pfasCard.js"></script>
+</body>
+</html>

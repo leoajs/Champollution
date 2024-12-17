@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Champollution - Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="ressources/tailwind_config.js"></script>
+    <link rel="stylesheet" href="ressources/style.css">
+</head>
+<body class="font-poppins bg-gray-50">
+    <!-- Bouton fixe "En savoir plus" -->
+    <div class="fixed left-0 top-1/2 -translate-y-1/2 hidden md:block z-50" style="display:none;">
+        <a href="en-savoir-plus.html">
+            <button id="enSavoirPlusButton" class="relative bg-green-600 text-white px-4 py-3 rounded-r-lg shadow-lg hover:bg-green-700 transition-all duration-300 hover:translate-x-1 group">
+                <span class="writing-mode-vertical transform rotate-180 inline-block">En savoir plus</span>
+                <div id="popupInfo" class="absolute bg-green-600 text-white p-4 rounded-lg left-full top-0 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 shadow-lg">
+                    <h3 class="font-semibold mb-2">Découvrez plus sur les PFAS</h3>
+                    <p class="text-sm">Cliquez pour en apprendre davantage sur les polluants éternels et leur impact sur notre environnement.</p>
+                </div>
+            </button>
+        </a>
+    </div>
+
+
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-green-500 to-green-600 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center">
+            <a href="index.html">
+                <div class="flex items-center gap-4">
+                    <img src="ressources/images/logo_champollution_transparent.png" alt="Champollution Logo" class="h-16 w-16 object-cover rounded border-2 border-white p-1">
+                    <h1 class="text-2xl md:text-3xl font-semibold text-white text-shadow">Champollution</h1>
+                </div>
+            </a>
+            <div class="flex items-center justify-center">
+                <div class="text-white/90 text-lg mt-2 md:mt-0">Les polluants éternels</div>
+                <!-- Logo INUC -->
+                <img src="ressources/images/logo_inuc.png" alt="Logo INUC" class="h-8 w-auto ml-3" draggable="false" oncontextmenu="return false;">
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-8">
+        <!-- Bouton Retour -->
+        <div class="bottom-4 left-4">
+            <button onclick="window.location.href='en-savoir-plus.html'" class="bg-green-600 text-white px-4 py-3 rounded-lg shadow-lg hover:bg-green-700 transition-all duration-300 flex items-center gap-2">
+                <i class="fas fa-arrow-left"></i>
+                <span>Retour</span>
+            </button>
+        </div>
+        <section class="rounded-xl shadow-lg p-8 my-12">
+            <h3 class="text-3xl font-bold text-green-600 text-left">Solutions pour réduire l’impact des PFAS</h3>
+        </section>
+        
+        <section class="rounded-xl shadow-lg p-8 my-12">
+            <!-- Début : Solutions pour réduire les PFAS -->
+            <h3 class="text-xl font-semibold text-left mb-3">
+                <i class="fa-solid fa-arrow-right"></i> Quelles sont les solutions possibles pour limiter les PFAS ?
+            </h3>
+            <p class="text-lg text-left">
+                Bien qu’aucune solution miracle n’existe pour éliminer totalement les PFAS, plusieurs approches concrètes permettent de limiter leur présence dans l’environnement et leurs effets sur la santé humaine. Ces solutions s’articulent autour de la <span class="underline decoration-2 decoration-indigo-500">réduction de leur utilisation</span>, l'<span class="underline decoration-2 decoration-indigo-500">innovation chimique, la <span class="underline decoration-2 decoration-indigo-500">réglementation renforcée</span> et la <span class="underline decoration-2 decoration-indigo-500">sensibilisation du public.</span>
+            </p>
+        
+            <ul class="list-none ml-6 text-lg mt-4">
+                <!-- Point 1 -->
+                <li class="mb-6">
+                    <div class="text-xl">
+                        <span class="text-green-600"><i class="fa-solid fa-arrow-right"></i></span>
+                        <span class="font-bold">1 &diams; Réduire leur utilisation à la source :</span>
+                    </div>
+
+                    <p class="text-lg text-left mt-3">Pour limiter la dispersion des PFAS, la recherche d’alternatives moins persistantes est essentielle. L’industrie chimique développe déjà des <span class="font-semibold text-green-600">PFAS nouvelle génération</span>. Ces nouvelles substances :</p>
+                    <ul class="list-disc my-3">
+                        <li>Sont conçues avec des <span class="font-semibold text-green-600">chaînes de carbone plus courtes</span> pour réduire leur persistance et leur capacité d’accumulation dans l’environnement.</li>
+                        <li>Présentent une <span class="font-semibold text-green-600">toxicité réduite</span>, avec moins d’effets cancérigènes et une moindre perturbation du système immunitaire.</li>
+                    </ul>
+
+                    <div class="w-full sm:w-1/3 mx-auto my-4">
+                        <img class="border-2 rounded-lg p-4" src="ressources/images/solutions/labo.webp" alt="Illustration de laboratoire chimique">
+                    </div>
+                </li>
+
+                <!-- Point 2 -->
+                <li class="mb-6">
+                    <div class="text-xl">
+                        <span class="text-green-600"><i class="fa-solid fa-arrow-right"></i></span>
+                        <span class="font-bold">2 &diams; Mettre en place des réglementations strictes</span>
+                    </div>
+
+                    <p class="text-lg text-left mt-3">La réglementation est un outil indispensable pour encadrer l’usage des PFAS :</p>
+
+                    <ul class="list-disc my-3">
+                        <li><span class="font-semibold text-green-600">Interdiction progressive</span> : certains PFAS historiques, comme le <a class="font-semibold text-green-600 underline" href="https://fr.wikipedia.org/wiki/Acide_perfluorooctano%C3%AFque" target="_blank">PFOA</a> et le <a class="font-semibold text-green-600 underline" href="https://fr.wikipedia.org/wiki/Acide_perfluorooctanesulfonique" target="_blank">PFOS</a>, sont désormais interdits ou en voie de restriction.</li>
+                        <li><span class="font-semibold text-green-600">Surveillance renforcée</span> : les Agences Régionales de Santé (ARS) assurent le <span class="font-semibold text-green-600">contrôle des eaux potables</span> afin d’identifier et de traiter les zones contaminées.</li>
+                    </ul>
+
+                    <div class="w-full sm:w-1/3 mx-auto my-4">
+                        <img class="border-2 rounded-lg p-4" src="ressources/images/solutions/pfas_reglementationUE.webp" alt="Illustration de proposition de réglementation (Union Européenne)">
+                        <p class="mt-2 text-md text-slate-400 text-center">Source : <a href="https://cosmeticobs.com/fr/articles/echa-63/une-proposition-de-restriction-des-pfas-transmise-a-lecha-7096" target="_blank">Une proposition de restriction des PFAS transmise à l'ECHA</a></p>
+                    </div>
+
+                    <p class="text-lg text-left mt-3">La mise en place de régulations internationales plus strictes, à l’image du <a class="font-semibold text-green-600 underline" href="https://fr.wikipedia.org/wiki/Protocole_de_Montr%C3%A9al" target="_blank">Protocole de Montréal</a> pour les CFC, pourrait accélérer la réduction globale des PFAS.</p>
+                </li>
+
+                <!-- Point 3 -->
+                <li class="mb-6">
+                    <div class="text-xl">
+                        <span class="text-green-600"><i class="fa-solid fa-arrow-right"></i></span>
+                        <span class="font-bold">3 &diams; Améliorer les méthodes de décontamination</span>
+                    </div>
+
+                    <p class="text-lg text-left mt-3">La <span class="font-semibold text-green-600">décontamination des sols et des eaux contaminés</span> est un défi coûteux et complexe, mais des solutions techniques existent :</p>
+
+                    <ul class="list-disc my-3">
+                        <li><span class="font-semibold text-green-600">Filtration avancée</span> : l’utilisation de filtres à charbon actif ou de systèmes à osmose inverse permet de capturer les PFAS présents dans l’eau.</li>
+                        <li><span class="font-semibold text-green-600">Innovation en traitement chimique</span> : des recherches sont en cours pour développer des procédés capables de <span class="font-semibold text-green-600">décomposer chimiquement les PFAS</span>, bien que ces solutions soient encore expérimentales.</li>
+                    </ul>
+
+                    <div class="w-full sm:w-1/2 mx-auto my-4">
+                        <img class="border-2 rounded-lg p-4" src="ressources/images/solutions/bassin_large.webp" alt="Illustration : centre de production et de la distribution d'eau potable">
+                        <p class="mt-2 text-md text-slate-400 text-center"><a href="https://stock.adobe.com/fr/images/recirculation-solid-contact-clarifier-sedimentation-tank-in-water-treatment-plant-microbiology-of-drinking-water-production-and-distribution-concept/348877107?prev_url=detail" target="_blank">&copy; tuastockphoto</a></p>
+                    </div>
+                </li>
+
+                <!-- Point 4 -->
+                <li class="mb-6">
+                    <div class="text-xl">
+                        <span class="text-green-600"><i class="fa-solid fa-arrow-right"></i></span>
+                        <span class="font-bold">4 &diams; Prioriser la conservation des écosystèmes</span>
+                    </div>
+
+                    <p class="text-lg text-left mt-3">La protection des milieux naturels contaminés est primordiale, comme le montre <a class="font-semibold text-green-600 underline" href="cas-concrets.html#ddt-camargue">l’exemple de la Camargue</a> après l’interdiction du DDT en 1972. Les efforts se concentrent aujourd’hui sur :</p>
+
+                    <ul class="list-disc my-3">
+                        <li>La <span class="font-semibold text-green-600">restauration des zones humides</span> pour préserver la biodiversité</li>
+                        <li>La <span class="font-semibold text-green-600">surveillance des écosystèmes</span> afin de minimiser l’impact des polluants et d’éviter leur dispersion avec la montée des eaux.
+                        </li>
+                    </ul>
+
+                    <div class="w-full sm:w-1/2 mx-auto my-4">
+                        <img class="border-2 rounded-lg p-4" src="ressources/images/camargue.jpg" alt="Photo de la Camargue">
+                        <p class="mt-2 text-md text-slate-400 text-center">Photo de la Camargue</p>
+                    </div>
+                </li>
+
+                <!-- Point 5 -->
+                <li class="mb-6">
+                    <div class="text-xl">
+                        <span class="text-green-600"><i class="fa-solid fa-arrow-right"></i></span>
+                        <span class="font-bold">5 &diams; Éduquer et sensibiliser le public</span>
+                    </div>
+
+                    <p class="text-lg text-left mt-3">L’éducation joue un rôle essentiel dans la lutte contre les PFAS :</p>
+
+                    <ul class="list-disc my-3">
+                        <li><span class="font-semibold text-green-600">Informer les consommateurs</span> sur l’impact des PFAS et les encourager à adopter des produits sans substances perfluorées (textiles, emballages, cosmétiques).</li>
+                        <li><span class="font-semibold text-green-600">Sensibiliser les industriels</span> pour développer des alternatives sûres et durables.</li>
+                    </ul>
+
+                    <div class="w-full sm:w-1/2 mx-auto my-4">
+                        <img class="border-2 rounded-lg p-4" src="ressources/images/solutions/enquete.webp" alt="Illustration Enquete Envoyé Spécial : Alerte aux polluants éternels">
+                        <p class="mt-2 text-md text-slate-400 text-center"><a href="https://www.francetvinfo.fr/sante/environnement-et-sante/video-alerte-aux-polluants-eternels_5132140.html" target="_blank">Envoyé Spécial : Alerte aux polluants éternels</a></p>
+                    </div>
+                </li>
+
+                
+            </ul>
+        
+            <div class="rounded-xl shadow-lg p-8 mt-4 bg-amber-100">
+                <img class="w-10 float-left mr-2" src="ressources/images/categories/alerte.webp" alt="icone alerte">
+                <p class="text-gray-500">
+                    <strong>À retenir :</strong> Les solutions pour limiter les PFAS reposent sur trois piliers : 
+                    <span class="underline decoration-2 decoration-indigo-500">réduction de leur utilisation</span>, 
+                    <span class="underline decoration-2 decoration-indigo-500">amélioration des traitements</span> et 
+                    <span class="underline decoration-2 decoration-indigo-500">sensibilisation</span>. Toutefois, il faut savoir que leur élimination reste complexe et coûteuse.
+                </p>
+            </div>
+            <!-- Fin : Solutions pour réduire les PFAS -->
+        </section>
+           
+    </main>
+
+    <footer class="bg-green-600 text-white py-8 text-center">
+        <p>Champollution © 2024</p><br>
+        <p>Projet de T.E par des étudiants de Sciences de la vie et d'Informatique pour sensibiliser au problème des polluants éternels.</p>
+        <div class="flex items-center justify-center">
+            <a href="https://www.univ-jfc.fr/" target="_blank" class="underline text-amber-200"><p>Institut National Universitaire Champollion</p></a>
+            <!-- Logo INUC -->
+            <img src="ressources/images/logo_inuc.png" alt="Logo INUC" class="h-8 w-auto ml-3" draggable="false" oncontextmenu="return false;">
+        </div>
+    </footer>
+
+    <script src="ressources/pfasCard.js"></script>
+</body>
+</html>

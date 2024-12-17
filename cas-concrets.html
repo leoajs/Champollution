@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Champollution - Les cas concrets</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="ressources/tailwind_config.js"></script>
+    <link rel="stylesheet" href="ressources/style.css">
+</head>
+<body class="font-poppins bg-gray-50">
+    <!-- Bouton fixe "En savoir plus" -->
+    <div class="fixed left-0 top-1/2 -translate-y-1/2 hidden md:block z-50" style="display:none;">
+        <a href="en-savoir-plus.html">
+            <button id="enSavoirPlusButton" class="relative bg-green-600 text-white px-4 py-3 rounded-r-lg shadow-lg hover:bg-green-700 transition-all duration-300 hover:translate-x-1 group">
+                <span class="writing-mode-vertical transform rotate-180 inline-block">En savoir plus</span>
+                <div id="popupInfo" class="absolute bg-green-600 text-white p-4 rounded-lg left-full top-0 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 shadow-lg">
+                    <h3 class="font-semibold mb-2">Découvrez plus sur les PFAS</h3>
+                    <p class="text-sm">Cliquez pour en apprendre davantage sur les polluants éternels et leur impact sur notre environnement.</p>
+                </div>
+            </button>
+        </a>
+    </div>
+
+
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-green-500 to-green-600 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center">
+            <a href="index.html">
+                <div class="flex items-center gap-4">
+                    <img src="ressources/images/logo_champollution_transparent.png" alt="Champollution Logo" class="h-16 w-16 object-cover rounded border-2 border-white p-1">
+                    <h1 class="text-2xl md:text-3xl font-semibold text-white text-shadow">Champollution</h1>
+                </div>
+            </a>
+            <div class="flex items-center justify-center">
+                <div class="text-white/90 text-lg mt-2 md:mt-0">Les polluants éternels</div>
+                <!-- Logo INUC -->
+                <img src="ressources/images/logo_inuc.png" alt="Logo INUC" class="h-8 w-auto ml-3" draggable="false" oncontextmenu="return false;">
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-8">
+        <!-- Bouton Retour -->
+        <div class="bottom-4 left-4">
+            <button onclick="window.location.href='en-savoir-plus.html'" class="bg-green-600 text-white px-4 py-3 rounded-lg shadow-lg hover:bg-green-700 transition-all duration-300 flex items-center gap-2">
+                <i class="fas fa-arrow-left"></i>
+                <span>Retour</span>
+            </button>
+        </div>
+        <section class="rounded-xl shadow-lg p-8 my-12">
+            <h3 class="text-3xl font-bold text-green-600 text-left">Quand les polluants s’invitent dans nos vies : histoires et impacts</h3>
+        </section>
+
+        <section class="rounded-xl shadow-lg p-8 my-12">
+            <h3 class="text-2xl font-semibold text-left text-green-600 mb-6">Sommaire</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <a href="#minamata" class="block bg-indigo-100 hover:bg-indigo-200 transition-all duration-300 p-4 rounded-lg shadow-md text-indigo-700 hover:text-indigo-900 flex items-center gap-4">
+                    <i class="fa-solid fa-arrow-right text-lg"></i>
+                    <span class="text-lg font-medium">Cas de la baie de Minamata (Japon)</span>
+                </a>
+                <a href="#ddt-camargue" class="block bg-indigo-100 hover:bg-indigo-200 transition-all duration-300 p-4 rounded-lg shadow-md text-indigo-700 hover:text-indigo-900 flex items-center gap-4">
+                    <i class="fa-solid fa-arrow-right text-lg"></i>
+                    <span class="text-lg font-medium">Cas du DDT et nettoyage de la Camargue</span>
+                </a>
+                <a href="#cfc-ozone" class="block bg-indigo-100 hover:bg-indigo-200 transition-all duration-300 p-4 rounded-lg shadow-md text-indigo-700 hover:text-indigo-900 flex items-center gap-4">
+                    <i class="fa-solid fa-arrow-right text-lg"></i>
+                    <span class="text-lg font-medium">Cas des CFC : Le trou dans la couche d’ozone</span>
+                </a>
+                <a href="#eau-potable" class="block bg-indigo-100 hover:bg-indigo-200 transition-all duration-300 p-4 rounded-lg shadow-md text-indigo-700 hover:text-indigo-900 flex items-center gap-4">
+                    <i class="fa-solid fa-arrow-right text-lg"></i>
+                    <span class="text-lg font-medium">Contamination de l’eau potable en France : Rumilly et Lyon</span>
+                </a>
+            </div>
+        </section>
+        
+
+        <section id="minamata" class="rounded-xl shadow-lg p-8 my-12">
+            <!-- Début : Cas de la baie de Minamata Bay -->
+            <h3 class="text-xl font-semibold text-left mb-3"><i class="fa-solid fa-arrow-right"></i> Cas de la baie de Minamata (Japon)</h3>
+            <p class="text-lg text-left">
+                Dans les années <span class="underline decoration-2 decoration-indigo-500">1950-1960</span>, l’entreprise chimique Chisso Corporation, située près de la baie de Minamata, a déversé des produits chimiques dans les eaux locales. Parmi ces produits se trouvaient des PCB (polychlorobiphényles) et du mercure, entraînant des conséquences écologiques et sanitaires tragiques.
+            </p>
+            <div class="w-full sm:w-1/3 mx-auto my-4">
+                <img class="border-2 rounded-lg p-4" src="https://www.nippon.com/fr/ncommon/contents/images/164701/164701.jpg" alt="« La canalisation de la Mort ». Entre 1932 et 1968, l’usine pétrochimique Chisso de Minamata a rejeté directement et sans discontinuer dans la baie de Minamata des effluents hautement toxiques contenant notamment du méthylmercure qui a pollué la chaîne alimentaire des pêcheurs et rendu gravement malades des milliers de personnes. (Photo prise en 1972)">
+                <p class="mt-2 text-md text-slate-400 text-center">« La canalisation de la Mort ». (Photo prise en 1972 par William Eugene Smith)<br>Source : <a href="https://www.nippon.com/fr/images/i00051/" target="_blank">nippon.com</a></p>
+            </div>
+            
+            <p class="text-lg text-left mt-4">
+                Le déversement de ces substances a entraîné des impacts dévastateurs sur la faune marine, la flore et la santé humaine. Voici les principales conséquences :
+            </p>
+            <ul class="list-none ml-6 text-lg">
+                <li><span class="text-green-600"><i class="fa-solid fa-arrow-right"></i></span> <span class="underline decoration-2 decoration-indigo-500">Impact sur la faune marine :</span> les PCB se sont accumulés dans la chaîne alimentaire, provoquant l’empoisonnement des animaux marins.</li>
+                <li><span class="text-green-600"><i class="fa-solid fa-arrow-right"></i></span> <span class="underline decoration-2 decoration-indigo-500">Effets environnementaux :</span> dégradation des écosystèmes locaux, entraînant des déséquilibres écologiques majeurs.</li>
+                <li><span class="text-green-600"><i class="fa-solid fa-arrow-right"></i></span> <span class="underline decoration-2 decoration-indigo-500">Santé humaine :</span> consommation de poissons contaminés par les PCB et le mercure, causant des maladies neurologiques graves, notamment la maladie de Minamata.</li>
+                <li><span class="text-green-600"><i class="fa-solid fa-arrow-right"></i></span> <span class="underline decoration-2 decoration-indigo-500">Effet persistant :</span> des traces de contamination sont toujours détectées aujourd’hui, témoignant de l’extrême résistance des PCB dans l’environnement.</li>
+            </ul>
+            <p class="text-lg text-left mt-4">
+                Le phénomène tragique de la baie de Minamata illustre les <span class="underline decoration-2 decoration-red-500">risques environnementaux et sanitaires</span> liés à la libération de substances chimiques persistantes comme les PCB, mettant en évidence la nécessité d’une régulation stricte et d’une sensibilisation accrue.
+            </p>
+            <div class="rounded-xl shadow-lg p-8 mt-4 bg-amber-100">
+                <img class="w-10 float-left mr-2" src="ressources/images/categories/alerte.webp" alt="icone alerte">
+                <p class="text-gray-500">
+                    <strong>À retenir :</strong> Le cas de Minamata démontre l’impact dévastateur des polluants persistants comme les PCB sur les écosystèmes et les populations humaines. Les conséquences, tant écologiques que sanitaires, perdurent encore aujourd’hui.
+                </p>
+            </div>
+            <!-- Fin : Cas de la baie de Minamata Bay -->
+        </section>
+        
+
+        <section id="ddt-camargue" class="rounded-xl shadow-lg p-8 my-12">
+            <!-- Début : Cas du DDT et nettoyage de la Camargue -->
+            <h3 class="text-xl font-semibold text-left mb-3"><i class="fa-solid fa-arrow-right"></i> Cas du DDT et nettoyage de la Camargue (1950-1970)</h3>
+            <p class="text-lg text-left">
+                Le <span class="underline decoration-2 decoration-indigo-500">DDT (dichlorodiphényltrichloroéthane)</span>, un insecticide synthétisé dans les années 1940, a été présenté comme une solution miracle pour lutter contre les maladies transmises par les insectes, comme le paludisme ou le typhus. Utilisé massivement dès la fin de la Seconde Guerre mondiale, il est devenu un outil incontournable dans les campagnes agricoles et sanitaires.
+            </p>
+            <div class="w-full sm:w-1/2 mx-auto my-4">
+                <img class="border-2 rounded-lg p-4" src="ressources/images/camargue.jpg" alt="Photo de la Camargue">
+                <p class="mt-2 text-md text-slate-400 text-center">Photo de la Camargue</p>
+            </div>
+        
+            <p class="text-lg text-left mt-4">
+                En France, entre les années 1950 et 1970, le DDT a été massivement employé dans la région de la Camargue pour éliminer les populations de moustiques. Bien qu’efficace à court terme, son utilisation a entraîné des conséquences graves et durables sur l’environnement et la faune.
+            </p>
+            <ul class="list-none ml-6 text-lg">
+                <li><span class="text-green-600"><i class="fa-solid fa-arrow-right"></i></span> <span class="underline decoration-2 decoration-indigo-500">Bioaccumulation :</span> le DDT, persistant dans l’environnement, s’accumule dans la chaîne alimentaire. Les animaux de petite taille absorbent les substances, qui se concentrent à mesure qu’elles remontent la chaîne alimentaire.</li>
+                <li><span class="text-green-600"><i class="fa-solid fa-arrow-right"></i></span> <span class="underline decoration-2 decoration-indigo-500">Impact sur les oiseaux :</span> le DDT a fragilisé les coquilles d'œufs, provoquant la mort des embryons avant l’éclosion. Cela a conduit à un déclin significatif des populations d’oiseaux emblématiques comme les flamants roses.</li>
+                <li><span class="text-green-600"><i class="fa-solid fa-arrow-right"></i></span> <span class="underline decoration-2 decoration-indigo-500">Disparition d’espèces :</span> des espèces comme le balbuzard pêcheur et la cigogne blanche ont vu leurs populations diminuer drastiquement en raison de la baisse de leur capacité de reproduction.</li>
+            </ul>
+        
+            <p class="text-lg text-left mt-4">
+                Malgré son interdiction progressive à partir des années 1970, les effets du <span class="underline decoration-2 decoration-indigo-500">DDT</span> sont encore observables aujourd’hui. Des traces de ce polluant éternel persistent dans les sols, l’eau et même les organismes vivants, témoignant de son extrême stabilité chimique.
+            </p>
+            <div class="rounded-xl shadow-lg p-8 mt-4 bg-amber-100">
+                <img class="w-10 float-left mr-2" src="ressources/images/categories/alerte.webp" alt="icone alerte">
+                <p class="text-gray-500">
+                    <strong>À retenir :</strong> Le <span class="underline decoration-2 decoration-indigo-500">DDT</span> a joué un rôle clé dans la lutte contre les maladies vectorielles et agricoles, mais son utilisation a causé des dégâts irréversibles sur l’écosystème fragile de la Camargue. Sa bioaccumulation a particulièrement impacté la faune aviaire, menaçant la biodiversité locale.
+                </p>
+            </div>
+            <!-- Fin : Cas du DDT et nettoyage de la Camargue -->
+        </section>
+        
+
+        <section id="cfc-ozone" class="rounded-xl shadow-lg p-8 my-12">
+            <!-- Début : Cas des CFC et le trou dans la couche d'ozone -->
+            <h3 class="text-xl font-semibold text-left mb-3"><i class="fa-solid fa-arrow-right"></i> Cas des CFC : Le trou dans la couche d’ozone (1950-1990)</h3>
+            <p class="text-lg text-left">
+                Les <span class="underline decoration-2 decoration-indigo-500">CFC (Chlorofluorocarbures)</span> sont des composés chimiques qui ont été massivement utilisés entre les années 1950 et 1990, principalement comme réfrigérants, agents propulseurs et dans la fabrication de mousses isolantes. Bien qu’initialement considérés comme inoffensifs, leur utilisation a entraîné des <span class="underline decoration-2 decoration-red-500">dommages environnementaux majeurs</span>, notamment l’appauvrissement de la couche d’ozone.
+            </p>
+            <div class="w-full sm:w-1/3 mx-auto my-4">
+                <img class="border-2 rounded-lg p-4" src="ressources/images/trou-ozone.jpg" alt="Le trou dans la couche d'ozone observée par le satellite du programme Copernicus, Sentinel-5P.">
+                <p class="mt-2 text-md text-slate-400 text-center">Le trou dans la couche d'ozone observée par le satellite du programme Copernicus, Sentinel-5P.<br>Source : Copernicus Sentinel data (2023)</p>
+            </div>
+        
+            <p class="text-lg text-left mt-4">
+                La <span class="underline decoration-2 decoration-indigo-500">couche d’ozone</span>, située dans la stratosphère, joue un rôle essentiel en protégeant la Terre des rayons ultraviolets (UV-B) cancérigènes. Les CFC, lorsqu’ils sont libérés dans l’atmosphère, détruisent cette barrière protectrice, entraînant des conséquences graves pour l’environnement et la santé humaine :
+            </p>
+            <ul class="list-none ml-6 text-lg">
+                <li>
+                    <span class="text-green-600"><i class="fa-solid fa-arrow-right"></i></span> 
+                    <span class="underline decoration-2 decoration-indigo-500">Augmentation des UV-B :</span> l’appauvrissement de la couche d’ozone permet à davantage de rayons UV-B d’atteindre la surface terrestre, augmentant le risque de <span class="underline decoration-2 decoration-red-500">cancers de la peau</span> et de dommages oculaires comme la cataracte.
+                </li>
+                <li>
+                    <span class="text-green-600"><i class="fa-solid fa-arrow-right"></i></span> 
+                    <span class="underline decoration-2 decoration-indigo-500">Impact sur les écosystèmes marins :</span> les UV-B affectent le <span class="underline decoration-2 decoration-indigo-500">phytoplancton</span>, qui est à la base de la chaîne alimentaire marine. La perturbation de ces organismes menace l’équilibre des écosystèmes marins.
+                </li>
+            </ul>
+        
+            <p class="text-lg text-left mt-4">
+                Bien que leur production ait été progressivement interdite grâce au <span class="underline decoration-2 decoration-green-500">Protocole de Montréal (1987)</span>, les CFC restent présents dans l’atmosphère en raison de leur persistance chimique. Les efforts internationaux ont toutefois permis une réduction significative des émissions et une lente reconstitution de la couche d’ozone.
+            </p>
+            <div class="rounded-xl shadow-lg p-8 mt-4 bg-amber-100">
+                <img class="w-10 float-left mr-2" src="ressources/images/categories/alerte.webp" alt="icone alerte">
+                <p class="text-gray-500">
+                    <strong>À retenir :</strong> Les <span class="underline decoration-2 decoration-indigo-500">CFC</span> sont un exemple emblématique de l’impact destructeur des polluants persistants sur les systèmes planétaires. Leur interdiction a marqué une avancée majeure dans la lutte contre les dégradations environnementales globales.
+                </p>
+            </div>
+            <!-- Fin : Cas des CFC et le trou dans la couche d'ozone -->
+        </section>
+        
+        <section id="eau-potable" class="rounded-xl shadow-lg p-8 my-12">
+            <!-- Début : Cas de contamination de l'eau potable à Rumilly et Lyon -->
+            <h3 class="text-xl font-semibold text-left mb-3"><i class="fa-solid fa-arrow-right"></i> Contamination de l’eau potable en France : Rumilly et Lyon</h3>
+            <p class="text-lg text-left">
+                En France, certaines communes comme <span class="underline decoration-2 decoration-indigo-500">Rumilly</span> (Haute-Savoie) et des grandes métropoles comme <span class="underline decoration-2 decoration-indigo-500">Lyon</span> sont confrontées à la contamination des eaux potables par les <span class="underline decoration-2 decoration-indigo-500">PFAS (substances per- et polyfluoroalkylées)</span>. Ces polluants persistants, issus principalement d’activités industrielles, représentent une menace majeure pour l’environnement et la santé publique.
+            </p>
+            <div class="w-full sm:w-1/3 mx-auto my-4">
+                <img class="border-2 rounded-lg p-4" src="ressources/images/robinet-eau.jpg" alt="Verre d'eau rempli par l'eau provenant d'un robinet">
+                <p class="mt-2 text-md text-slate-400 text-center">Contamination de l'eau potable par les PFAS</p>
+            </div>
+        
+            <p class="text-lg text-left mt-4">
+                Les autorités locales, en collaboration avec les agences sanitaires, surveillent régulièrement les niveaux de PFAS dans l’eau potable afin de garantir qu’ils respectent les seuils considérés comme sûrs. Lorsque ces seuils sont dépassés, plusieurs mesures peuvent être mises en place :
+            </p>
+            <ul class="list-none ml-6 text-lg">
+                <li><span class="text-green-600"><i class="fa-solid fa-arrow-right"></i></span> <span class="underline decoration-2 decoration-indigo-500">Restrictions de consommation :</span> limitation ou interdiction temporaire de l’utilisation de l’eau potable.</li>
+                <li><span class="text-green-600"><i class="fa-solid fa-arrow-right"></i></span> <span class="underline decoration-2 decoration-indigo-500">Filtrations supplémentaires :</span> mise en place de systèmes de purification pour éliminer les PFAS.</li>
+                <li><span class="text-green-600"><i class="fa-solid fa-arrow-right"></i></span> <span class="underline decoration-2 decoration-indigo-500">Identification des sources :</span> études pour localiser et réduire les rejets industriels responsables de la pollution.</li>
+            </ul>
+        
+            <p class="text-lg text-left mt-4">
+                À <span class="underline decoration-2 decoration-indigo-500">Lyon</span>, en raison de son tissu industriel dense, plusieurs sources potentielles de contamination par les PFAS ont été identifiées :
+            </p>
+            <ul class="list-none ml-6 text-lg">
+                <li><span class="text-green-600"><i class="fa-solid fa-arrow-right"></i></span> <span class="underline decoration-2 decoration-indigo-500">Industrie chimique :</span> utilisation de produits contenant des PFAS, tels que les revêtements imperméabilisants et les mousses anti-incendie.</li>
+                <li><span class="text-green-600"><i class="fa-solid fa-arrow-right"></i></span> <span class="underline decoration-2 decoration-indigo-500">Sites d’incendies anciens :</span> contamination des sols et des eaux par des mousses chimiques utilisées dans le passé.</li>
+            </ul>
+        
+            <p class="text-lg text-left mt-4">
+                Ces cas mettent en lumière les défis liés à la gestion des <span class="underline decoration-2 decoration-indigo-500">polluants éternels</span> dans les réseaux d’eau potable. Bien que des mesures soient prises pour réduire l’exposition, la <span class="underline decoration-2 decoration-red-500">persistance</span> des PFAS dans l’environnement continue de poser un problème à long terme.
+            </p>
+            <div class="rounded-xl shadow-lg p-8 mt-4 bg-amber-100">
+                <img class="w-10 float-left mr-2" src="ressources/images/categories/alerte.webp" alt="icone alerte">
+                <p class="text-gray-500">
+                    <strong>À retenir :</strong> Les contaminations de l’eau potable par les PFAS à Rumilly et Lyon illustrent les conséquences des activités industrielles sur les ressources en eau. Ces polluants persistants exigent des solutions à la fois locales et globales pour protéger la santé publique.
+                </p>
+            </div>
+            <!-- Fin : Cas de contamination de l'eau potable à Rumilly et Lyon -->
+        </section>
+        
+    </main>
+
+    <footer class="bg-green-600 text-white py-8 text-center">
+        <p>Champollution © 2024</p><br>
+        <p>Projet de T.E par des étudiants de Sciences de la vie et d'Informatique pour sensibiliser au problème des polluants éternels.</p>
+        <div class="flex items-center justify-center">
+            <a href="https://www.univ-jfc.fr/" target="_blank" class="underline text-amber-200"><p>Institut National Universitaire Champollion</p></a>
+            <!-- Logo INUC -->
+            <img src="ressources/images/logo_inuc.png" alt="Logo INUC" class="h-8 w-auto ml-3" draggable="false" oncontextmenu="return false;">
+        </div>
+    </footer>
+
+    <script src="ressources/pfasCard.js"></script>
+</body>
+</html>

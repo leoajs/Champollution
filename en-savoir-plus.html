@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Champollution - En savoir plus</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="ressources/tailwind_config.js"></script>
+    <link rel="stylesheet" href="ressources/style.css">
+</head>
+<body class="font-poppins bg-gray-50">
+    <!-- Bouton fixe "En savoir plus" -->
+    <div class="fixed left-0 top-1/2 -translate-y-1/2 hidden md:block z-50" style="display:none;">
+        <a href="en-savoir-plus.html">
+            <button id="enSavoirPlusButton" class="relative bg-green-600 text-white px-4 py-3 rounded-r-lg shadow-lg hover:bg-green-700 transition-all duration-300 hover:translate-x-1 group">
+                <span class="writing-mode-vertical transform rotate-180 inline-block">En savoir plus</span>
+                <div id="popupInfo" class="absolute bg-green-600 text-white p-4 rounded-lg left-full top-0 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 shadow-lg">
+                    <h3 class="font-semibold mb-2">Découvrez plus sur les PFAS</h3>
+                    <p class="text-sm">Cliquez pour en apprendre davantage sur les polluants éternels et leur impact sur notre environnement.</p>
+                </div>
+            </button>
+        </a>
+    </div>
+
+
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-green-500 to-green-600 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center">
+            <a href="index.html">
+                <div class="flex items-center gap-4">
+                    <img src="ressources/images/logo_champollution_transparent.png" alt="Champollution Logo" class="h-16 w-16 object-cover rounded border-2 border-white p-1">
+                    <h1 class="text-2xl md:text-3xl font-semibold text-white text-shadow">Champollution</h1>
+                </div>
+            </a>
+            <div class="flex items-center justify-center">
+                <div class="text-white/90 text-lg mt-2 md:mt-0">Les polluants éternels</div>
+                <!-- Logo INUC -->
+                <img src="ressources/images/logo_inuc.png" alt="Logo INUC" class="h-8 w-auto ml-3" draggable="false" oncontextmenu="return false;">
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-8">
+        <!-- Bouton Retour -->
+        <div class="bottom-4 left-4">
+            <button onclick="window.location.href='index.html'" class="bg-green-600 text-white px-4 py-3 rounded-lg shadow-lg hover:bg-green-700 transition-all duration-300 flex items-center gap-2">
+                <i class="fas fa-arrow-left"></i>
+                <span>Retour</span>
+            </button>
+        </div>
+        <section class="rounded-xl shadow-lg p-8 my-12">
+            <h3 class="text-xl font-semibold text-green-800 text-left">Vous ne pouvez ni les voir ni les sentir, mais chaque jour, <span class="underline">vous êtes en contact avec des polluants éternels.</span></h3>
+        </section>
+
+        <!-- Section Redirection -->
+        <section class="bg-white rounded-xl shadow-lg p-8 my-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <a href="pourquoi.html">
+                    <div class="bg-gray-50 rounded-lg p-6 text-center transform transition-transform hover:-translate-y-2">
+                        <div class="text-3xl font-bold text-green-600 mb-2">Pourquoi polluants éternels ?</div>
+                        <img class="w-1/3 mx-auto mt-3" src="ressources/images/categories/molecule.webp" alt="Molécules de PFAS">
+                    </div>
+                </a>
+                <a href="impacts.html">
+                    <div class="bg-gray-50 rounded-lg p-6 text-center transform transition-transform hover:-translate-y-2">
+                        <div class="text-3xl font-bold text-green-600 mb-2">Impact sur la santé</div>
+                        <img class="w-1/3 mx-auto my-6" src="ressources/images/categories/sante.webp" alt="Molécules de PFAS">
+                    </div>
+                </a>
+                <a href="cas-concrets.html">
+                    <div class="bg-gray-50 rounded-lg p-6 text-center transform transition-transform hover:-translate-y-2">
+                        <div class="text-3xl font-bold text-green-600 mb-2">Cas concrets</div>
+                        <img class="w-1/3 mx-auto my-6" src="ressources/images/categories/feuilles.webp" alt="Molécules de PFAS">
+                    </div>
+                </a>
+                <!-- Ajout de deux div vides pour centrer le dernier élément -->
+                <div class="hidden md:block"></div>
+                <a href="solutions.html">
+                    <div class="bg-gray-50 rounded-lg p-6 text-center transform transition-transform hover:-translate-y-2">
+                        <div class="text-3xl font-bold text-green-600 mb-2">Solutions</div>
+                        <img class="w-1/3 mx-auto my-6" src="ressources/images/categories/ampoule.webp" alt="Molécules de PFAS">
+                    </div>
+                </a>
+                <div class="hidden md:block"></div>
+            </div>
+        </section>        
+        
+    </main>
+
+    <footer class="bg-green-600 text-white py-8 text-center">
+        <p>Champollution © 2024</p><br>
+        <p>Projet de T.E par des étudiants de Sciences de la vie et d'Informatique pour sensibiliser au problème des polluants éternels.</p>
+        <div class="flex items-center justify-center">
+            <a href="https://www.univ-jfc.fr/" target="_blank" class="underline text-amber-200"><p>Institut National Universitaire Champollion</p></a>
+            <!-- Logo INUC -->
+            <img src="ressources/images/logo_inuc.png" alt="Logo INUC" class="h-8 w-auto ml-3" draggable="false" oncontextmenu="return false;">
+        </div>
+    </footer>
+
+    <script src="ressources/pfasCard.js"></script>
+</body>
+</html>
