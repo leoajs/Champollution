@@ -22,7 +22,7 @@ Ce projet est réalisé par une équipe de **4 étudiants** :
 
 ## 🚀 Consultation
 
-Vous pouvez consulter le projet en ligne en cliquant sur le lien ci-dessous.
+Vous pouvez consulter le projet en ligne en cliquant sur le lien suivant.
 [leoajs.github.io/champollution](https://leoajs.github.io/champollution) 
 
 ## 📄 Licence
