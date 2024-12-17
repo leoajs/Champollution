@@ -17,8 +17,8 @@ Ce projet est réalisé par une équipe de **4 étudiants** :
 - **2 étudiants de Sciences de la Vie**
 - **2 étudiants en Informatique**
 
-👉 **Lieu** : [Institut National Universitaire Champollion](https://www.univ-jfc.fr/)  
-👉 **Objectif** : Contribuer à la sensibilisation sur la **Transition Écologique**.
+**Université** : [Institut National Universitaire Champollion](https://www.univ-jfc.fr/)  
+**Objectif** : Contribuer à la sensibilisation sur la **Transition Écologique**.
 
 ## 🚀 Consultation
 
